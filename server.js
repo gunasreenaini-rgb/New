@@ -16,7 +16,7 @@ const SECRET_KEY = "mysecretkey";
 const user = {
   id: 1,
   username: "Guna",
-  password: bcrypt.hashSync("Guna12345", 8), // hashed password
+  password: bcrypt.hashSync("Guna12", 8), // hashed password
 };
 
 // Test API
@@ -93,3 +93,4 @@ app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 
 });
+
