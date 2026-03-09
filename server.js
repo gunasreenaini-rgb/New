@@ -15,8 +15,8 @@ const SECRET_KEY = "mysecretkey";
 // Dummy user (simulating database)
 const user = {
   id: 1,
-  username: "guna",
-  password: bcrypt.hashSync("12345", 8), // hashed password
+  username: "Guna",
+  password: bcrypt.hashSync("Guna12345", 8), // hashed password
 };
 
 // Test API
@@ -91,4 +91,5 @@ app.post("/message", verifyToken, (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
+
 });
